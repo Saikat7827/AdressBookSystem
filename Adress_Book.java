@@ -10,8 +10,8 @@ public class Adress_Book {
 	String address;
 	String city;
 	String state;
-	long zip;
-	long phoneNo;
+	int zip;
+	int phoneNo;
 	String email;
 
 		public void contactDetails()
@@ -19,19 +19,27 @@ public class Adress_Book {
 
 			System.out.println("Enter firstName");
 			firstName=sc.next();
+			
 			System.out.println("Enter lastName");
 			lastName=sc.next();
+			
 			sc.nextLine();
+			
 			System.out.println("Enter address");
 			address=sc.nextLine();
+			
 			System.out.println("Enter city");
 			city=sc.next();
+			
 			System.out.println("Enter state");
 			state=sc.next();
+			
 			System.out.println("Enter zip");
 			zip=sc.nextInt();
+			
 			System.out.println("Enter phoneNo");
 			phoneNo=sc.nextInt();
+			
 			System.out.println("Enter email");
 			email=sc.next();
 
@@ -53,7 +61,7 @@ public class Adress_Book {
 public static void main(String[] args) {
 
 
-System.out.println('\n' +"Welcome to Address Book Program"+ '\n' );
+System.out.println('\n' +"Welcome to Address Book Program"+ '\n');
 
 Adress_Book obj = new Adress_Book();
 obj.contactDetails();
