@@ -29,9 +29,9 @@ public class Adress_Book {
 			System.out.println("Enter state");
 			state=sc.next();
 			System.out.println("Enter zip");
-			zip=sc.nextLong();
+			zip=sc.nextInt();
 			System.out.println("Enter phoneNo");
-			phoneNo=sc.nextLong();
+			phoneNo=sc.nextInt();
 			System.out.println("Enter email");
 			email=sc.next();
 
@@ -55,8 +55,8 @@ public static void main(String[] args) {
 
 System.out.println('\n' +"Welcome to Address Book Program"+ '\n' );
 
-Adress_Book abdullaah = new Adress_Book();
-abdullaah.contactDetails();
+Adress_Book obj = new Adress_Book();
+obj.contactDetails();
 
 }
 	    }
