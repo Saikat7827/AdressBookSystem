@@ -10,17 +10,17 @@ public class Adress_Book {
 	String address;
 	String city;
 	String state;
-	int zip;
-	int phoneNo;
+	long zip;
+	long phoneNo;
 	String email;
 
 		public void contactDetails()
 		{
 
-			System.out.println("Enter firstName");
+			System.out.println("Enter first Name");
 			firstName=sc.next();
 			
-			System.out.println("Enter lastName");
+			System.out.println("Enter last Name");
 			lastName=sc.next();
 			
 			sc.nextLine();
@@ -35,10 +35,10 @@ public class Adress_Book {
 			state=sc.next();
 			
 			System.out.println("Enter zip");
-			zip=sc.nextInt();
+			zip=sc.nextLong();
 			
 			System.out.println("Enter phoneNo");
-			phoneNo=sc.nextInt();
+			phoneNo=sc.nextLong();
 			
 			System.out.println("Enter email");
 			email=sc.next();
