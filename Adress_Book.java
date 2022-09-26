@@ -1,70 +1,72 @@
 package com.bl.Address;
 
-import java.util.LinkedList;
+	import java.util.Scanner;
 
-import java.util.Scanner;
+	public class Adress_Book {
+		Scanner sc = new Scanner(System.in);
 
-public class Adress_Book {
-	LinkedList<Contacts> contacts = new LinkedList<>();
-	Contacts contact  = new Contacts();
-	Scanner sc = new Scanner(System.in);
-//	contact.add("Contacts");
-	
-	public void add() {
-		
-		
-		
-		
-		System.out.println("Enter first Name");
-		String firstName=sc.next();
-		contact.setFirstName(firstName);
-		
-		System.out.println("Enter last Name");
-		String lastName=sc.next();
-		contact.setLastName(lastName);
-		sc.nextLine();
-		
-		System.out.println("Enter address");
-		String address=sc.nextLine();
-		contact.setAddress(address);
-		
-		System.out.println("Enter city");
-		String city=sc.next();
-		contact.setCity(city);
-		
-		System.out.println("Enter state");
-		String state=sc.next();
-		contact.setState(state);
-		
-		System.out.println("Enter zip");
-		int zip=sc.nextInt();
-		contact.setZip(zip);
-		
-		System.out.println("Enter phoneNo");
-		long phoneNo=sc.nextLong();
-		contact.setPhoneNo(phoneNo);
-		
-		System.out.println("Enter email");
-		String email=sc.next();
-		contact.setEmail(email);
-		
-		contacts.add(contact);
-		
-		
-	}
-	public void showcontact()
-	{
-		 System.out.println(contact.toString()); 
-	}
-	
+		String firstName;
+		String lastName;
+		String address;
+		String city;
+		String state;
+		long zip;
+		long phoneNo;
+		String email;
+
+			public void contactDetails()
+			{
+
+				System.out.println("Enter first Name");
+				firstName=sc.next();
+				
+				System.out.println("Enter last Name");
+				lastName=sc.next();
+				
+				sc.nextLine();
+				
+				System.out.println("Enter address");
+				address=sc.nextLine();
+				
+				System.out.println("Enter city");
+				city=sc.next();
+				
+				System.out.println("Enter state");
+				state=sc.next();
+				
+				System.out.println("Enter zip");
+				zip=sc.nextLong();
+				
+				System.out.println("Enter phoneNo");
+				phoneNo=sc.nextLong();
+				
+				System.out.println("Enter email");
+				email=sc.next();
+
+
+				System.out.println('\n' + "----Contact details----" + '\n' );
+				System.out.println(firstName);
+				System.out.println(lastName);
+				System.out.println(address);
+				System.out.println(city);
+				System.out.println(state);
+				System.out.println(zip);
+				System.out.println(phoneNo);
+				System.out.println(email);
+
+
+			}
+
+
 	public static void main(String[] args) {
-		Adress_Book objadress = new Adress_Book();
-		objadress.add();
-		objadress.showcontact();
+
+
+	System.out.println('\n' +"Welcome to Address Book Program"+ '\n');
+
+	Adress_Book obj = new Adress_Book();
+	obj.contactDetails();
+
 	}
+		    }
+
 	
-	    }
-	
-
-
-
